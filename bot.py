@@ -54,6 +54,16 @@ class ReplyRequestModel(BaseModel):
 
 # --- API Endpoints ---
 
+@app.get("/")
+async def root():
+    return {
+        "message": "Welcome to Magicpin Vera AI Assistant API",
+        "healthz": "/v1/healthz",
+        "metadata": "/v1/metadata",
+        "docs": "/docs"
+    }
+
+
 @app.get("/v1/healthz")
 async def healthz():
     """Liveness probe returning server status and context counts."""
