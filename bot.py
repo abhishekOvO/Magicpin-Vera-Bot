@@ -80,11 +80,11 @@ async def healthz():
 async def metadata():
     """Bot identity and model metadata endpoint."""
     return {
-        "team_name": "Team Magicpin Vera Architect",
-        "team_members": ["AI System Architect"],
+        "team_name": "Team Abhishek",
+        "team_members": ["Abhishek"],
         "model": "Hybrid Deterministic + Policy Composition Engine",
         "approach": "Deterministic 4-context composition with category voice policies, auto-reply detection state machine, and intent-transition routing",
-        "contact_email": "vera-team@magicpin.in",
+        "contact_email": "abhishek_23se006@dtu.ac.in",
         "version": "1.0.0",
         "submitted_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     }
